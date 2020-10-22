@@ -25,10 +25,21 @@ function unleashDog(name, breed){
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
 function exerciseDog(dogName, dogBreed){
-    messages = [];
-    for(let i = 0; i <= routine.length; i++){
-        x = routine[i]();
-        messeages.push(x)
-    }
-    return messages
+    let messages = [];
+
+    let x = routine[0](dogName, dogBreed);
+    let x1 = routine[1](dogName, dogBreed);
+    let x2 = routine[2](dogName, dogBreed);
+    let x3 = routine[3](dogName, dogBreed);
+    let x4 = routine[4](dogName, dogBreed);
+    let x5 = routine[5](dogName, dogBreed);
+
+    messages.push(x);
+    messages.push(x1);
+    messages.push(x2);
+    messages.push(x3);
+    messages.push(x4);
+    messages.push(x5);
+
+    return messages;
 }
