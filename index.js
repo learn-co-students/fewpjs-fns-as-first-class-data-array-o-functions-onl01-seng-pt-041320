@@ -23,3 +23,12 @@ function unleashDog(name, breed){
 }
 
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
+
+function exerciseDog(dogName, dogBreed){
+    messages = [];
+    for(let i = 0; i <= routine.length; i++){
+        x = routine[i]();
+        messeages.push(x)
+    }
+    return messages
+}
