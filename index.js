@@ -42,7 +42,8 @@ let routine = [wakeDog,
     unleashDog];
 
 function exerciseDog(dogName, dogBreed) {
-    routine.forEach() {
+    for (i = 0, i < routine.length, i++) {
         
     }
+
 }
